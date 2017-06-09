@@ -26,10 +26,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[PhD]{\textbf{Applied Machine Learning with Python}}
+\title[pythontz]{\textbf{PythonBootCamp}}
 % Titre du diaporama
 
-\subtitle{\textbf{Part-1.Basics of Python for Machine Learning} }
+\subtitle{\textbf{Pythontz: CIVE-Event} }
 % Sous-titre optionnel
 
 \author{ \href{https://sambaiga.github.io/ }{\href{https://sambaiga.github.io/}{Anthony FAUSTINE} }}
@@ -47,7 +47,7 @@
 
 
 \logo{
-	%\includegraphics[scale=0.1]{images/logo.pdf}
+	\includegraphics[scale=0.5]{../image/logo.png}
 }
 \hypersetup{
 	pdfauthor = {Anthony Faustine: sambaiga@gmail.com},
@@ -77,7 +77,16 @@
 
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++
-\section{Python}
+
+\begin{frame}{Presenter Bio}
+\begin{itemize}
+\item PhD student at Nelson Mandela African Institution of Science and Technology, \\  
+\item Conduct research in the field of applied machine learning and signal processing for computational sustainability with focus on building energy efficiency.\\
+\item Develop probabilistic-deep learning algorithm for energy dis-aggregation problem\\
+\item A Python enthusiast, loves to write blog posts and talk on applied machine learning with python.
+\end{itemize}
+\end{frame}
+\section{Session 1. Python-Basics}
 
 \begin{frame}\frametitle{Introduction}
 \framesubtitle{What is Python ?}
@@ -93,10 +102,11 @@ A very popular general-purpose programming language.
 \begin{frame}\frametitle{What can you use Python for?}
 
 \begin{itemize}
-\item Web development (\href{https://www.djangoproject.com/}{Django})
+\item Web development (\href{https://www.djangoproject.com/}{Django}, \href{http://flask.pocoo.org/}{Flask})
 \item Web Scraping (\href{https://www.djangoproject.com/}{Beautiful Soup})
 \item Scripting Language.
-\item Scientific programming and Numeric Computing.
+\item Scientific programming and Numeric Computing (\href{https://www.scipy.org/}{Scipy}).
+\item Machine Learning and Artificial Intelligence (\href{http://scikit-learn.org/}{scikit-learn})
 \item Automation and Embedded Sytstem.
 \item Desktop GUIs and 3D modelling. 
 \end{itemize}
@@ -138,23 +148,41 @@ libraries for everything else.
 	\item Open ethos well-fit to science
 	\begin{itemize}
 		\item Easy to reproduce results with python
-	\end{itemize}	
+	\end{itemize}
+	\item Python is the future of AI and Machine Learning	
 \end{enumerate}	
 \end{frame}
 
 
-\begin{frame}{Python’s Scientific Stack}
+\begin{frame}{Why learn Python ?}
+\emph{Want a higher salary? Become a Python programmer}
+\begin{figure}{ht}
+\includegraphics[scale=0.30]{../image/averagesalar.jpg}
+		\label{fig:result1}
+		\caption{https://simpleprogrammer.com/2017/01/18/7-reasons-why-you-should-learn-python/}
+\end{figure}
 
 \end{frame}	
   
 
-\begin{frame}{Python Syntax}
+\begin{frame}{Resource to learn Python}
+
+{\LARGE
+\href{https://simpleprogrammer.com/2017/02/15/get-started-learning-python/}{10 Resources to Get Started Learning Python}
+}
+
+\end{frame}
+
+\begin{frame}{Practical Session}
 
 \centering
 {\LARGE
     Practical Session 1
 }
 \end{frame}
+
+
+\section{Session 2. Python for Scientific Computing and Data Visulization}
 
 \begin{frame}{Numpy}
 NumPy is the fundamental Python package for scientific computing.
@@ -169,37 +197,64 @@ NumPy is the fundamental Python package for scientific computing.
 
 \begin{frame}{Numpy Arrays}
 NumPy provide a high-performance multidimensional array object, and tools for working with these arrays.
-\begin{block}{}
+\begin{exampleblock}{List vs Numpy}
 \begin{itemize}
-	\item A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers.
-	\item The essential difference between lists and NumPy arrays is functionality and speed.
+	\item  Numpy array is memory-efficient container that provides fast numerical operations.
+	\item lists vs  NumPy arrays $\Rightarrow$ functionality and speed.
 	\begin{itemize} 
-	\item Lists give you basic operation, but NumPy adds FFTs, convolutions, fast searching, basic statistics, linear algebra, histograms etc.
+	\item Lists $\Rightarrow$ give you basic operation, 
+	\item  NumPy $\Rightarrow$ adds FFTs, convolutions, fast searching, basic statistics, linear algebra, etc.
     \end{itemize}
-    \item Thus Numpy array is memory-efficient container that provides fast numerical operations.
+    
 \end{itemize}
-\end{block}	
+\end{exampleblock}	
 \end{frame}	
 
-\begin{frame}{Numpy Arrays}
+
+\begin{frame}{Matplotlib for Data Visulization}
+\href{https://matplotlib.org/}{Matplotlib} Matplotlib is an excellent 2D and 3D graphics library for generating scientific figures.\\
+ \begin{itemize}
+ 	\item It provides both a very quick way to visualize data from Python and publication-quality figures in many formats.
+ 	\item It can also be used for animations.
+ \end{itemize}
+ \begin{figure}{}
+\includegraphics[scale=0.50]{../image/matlibplot.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Other Python Library for Visualization}
+
+ \begin{itemize}
+ 	\item \href{https://seaborn.pydata.org/}{Seaborn}: a Python visualization library based on matplotlib. 
+    \begin{itemize}
+ 	\item It provides a high-level interface for drawing attractive statistical graphics.
+ 	\item It offers various features for building complex visualizations.
+    \end{itemize}
+ \end{itemize}
+ \begin{figure}{}
+\includegraphics[scale=0.30]{../image/searborn.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Other Python Library for Visualization}
+
+ \begin{itemize}
+ 	\item \href{http://bokeh.pydata.org/en/latest/}{Bokeh}: s a Python interactive visualization library that targets modern web browsers for presentation. 
+    \begin{itemize}
+ 	\item It provides a high-performance interactivity over very large or streaming datasets.
+ 	\item It offers various features for  creating interactive plots, dashboards, and data applications.
+    \end{itemize}
+ \end{itemize}
+ \centering
+\includegraphics[scale=0.30]{../image/searborn.png}
+\end{frame}
+
+\begin{frame}{Practical session}
 \centering
 {\LARGE  Practical Session 2}
 \end{frame}
 
-\begin{frame}{Matplotlib}
-Matplotlib is an excellent 2D and 3D graphics library for generating scientific figures.\\
- \begin{itemize}
- 	\item It provides both a very quick way to visualize data from Python and publication-quality figures in many formats.
- \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Matplotlib}
-\centering
-{\LARGE  Practical Session 3}
-\end{frame}
-
-
+\section{Session 2. Python for Data Analysis and Machine Learning}
 
 \begin{frame}{Data Analysis with Pandas}
 \framesubtitle{What is pandas?}
@@ -208,14 +263,12 @@ A Python package providing fast, flexible, and expressive data structures for da
 	\item A fundamental high-level building block for doing practical, real world data analysis in Python.
 	\item Designed to work with relational or labeled data or both $\Rightarrow$ a python version of Excel.
 \end{itemize}	
-
-\end{frame}
-
-
-\begin{frame}{Data Analyis with Pandas}
 \centering
-{\LARGE  Practical Session 3}
+\includegraphics[scale=0.30]{../image/pandas.png}
 \end{frame}
+
+
+
 
 
 \begin{frame}{Machine Learning}
@@ -238,11 +291,6 @@ For many problems  it’s difcult to program the correct behavior by hand  $\Rig
 
 \end{frame}
 
-\begin{frame}{Type of Machine Learning}
-\begin{figure}[h]
-\includegraphics[scale=0.2]{../image/ml_type.jpg}
-\end{figure}
-\end{frame}
 
 \begin{frame}{Type of Machine Learning}
 \begin{figure}[h]
@@ -257,7 +305,43 @@ For many problems  it’s difcult to program the correct behavior by hand  $\Rig
 \end{frame}
 
 \begin{frame}{Scikit-Learn for ML}
-Scikit-Learn (sklearn) is Python's premier general-purpose machine learning library. 
+Scikit-Learn (sklearn) is Python's premier general-purpose machine learning library.
+\centering
+\includegraphics[scale=0.30]{../image/sklearn.png} 
+\end{frame}
+
+\begin{frame}{Python ML and AI libraries}
+\begin{multicols}{3}
+\href{https://www.tensorflow.org/}{Tensorflow}
+\begin{figure}[h]
+\includegraphics[scale=0.3]{../image/tf.jpg}
+\end{figure} 
+\href{http://deeplearning.net/software/theano/}{Theano}
+\begin{figure}[h]
+\includegraphics[scale=0.3]{../image/theano.jpg}
+\end{figure}
+\href{http://pytorch.org/}{Pytorch}
+\begin{figure}[h]
+\includegraphics[scale=0.2]{../image/pytorch.png}
+\end{figure}
+\href{https://keras.io/}{Keras}
+\begin{figure}[h]
+\includegraphics[scale=0.3]{../image/keras.png}
+\end{figure}
+\href{http://edwardlib.org/}{Edward}
+\begin{figure}[h]
+\includegraphics[scale=0.15]{../image/edward.png}
+\end{figure}
+\href{http://www.nltk.org/}{NLTK}
+\begin{figure}[h]
+\includegraphics[scale=0.2]{../image/nltk.jpg}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{}
+\centering
+{\LARGE  Practical Session 4}
 \end{frame}
 %-------------------------------------------------------------
 \begin{frame}
